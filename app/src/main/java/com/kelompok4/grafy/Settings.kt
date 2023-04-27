@@ -30,6 +30,7 @@ class Settings : AppCompatActivity() {
     }
 
     private fun init() {
+        tvText = findViewById(R.id.tv_text)
         navigation = findViewById(R.id.navigation)
     }
 

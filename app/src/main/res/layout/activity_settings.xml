@@ -19,12 +19,20 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:orientation="vertical">
-
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="Grafy" />
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Kembali" />
+                android:text="Settings" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -45,7 +53,7 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
         android:layout_marginBottom="5dp"
-        android:background="@color/background"
+        android:background="@color/white"
         app:itemIconTint="@color/nav_tidakdiklik"
         app:itemTextColor="@color/nav_diklik"
         app:menu="@menu/menu" />
