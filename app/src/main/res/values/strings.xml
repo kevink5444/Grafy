@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Grafy</string>
+    <string name="kecerahan">Atur Kecerahan Layarmu Agar Tidak Membuat Matamu Kelelahan</string>
+    <string name="Kontras">Atur Kontras Layar Sesuai Dengan Kenyamananmu</string>
+    <string name="UbahMaskot">Pilih Maskot Favoritmu Yang Akan Menyemangati Belajarmu</string>
+    <string name="UbahTampilan">Atur Tampilan Paling Menarik Seperti Yang Kamu Inginkan</string>
 </resources>
