@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="460dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,24 +24,119 @@
 
     <TextView
         android:id="@+id/textView"
+        android:layout_marginTop="280dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="24dp"
         android:text="Nama Pengguna / e-mail"
         android:textColor="#171616"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="5dp"
+        android:hint="Ketik nama pengguna / e-mail"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:drawablePadding="15dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingHorizontal="15dp"
+        android:background="@drawable/persegipanjang"
+        />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="420dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="24dp"
+        android:text="Kata sandi"
+        android:textColor="#171616"
+        android:textSize="16sp"
+        />
 
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="5dp"
+        android:hint="Ketik Kata sandi"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:drawablePadding="15dp"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingHorizontal="15dp"
+        android:background="@drawable/persegipanjang"
+        />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="530dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="24dp"
+        android:text="Lupa kata sandi?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/masuk"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="Masuk"
+        android:textStyle="bold"
+        />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/daftar"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="Daftar"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Belum punya akun?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+</RelativeLayout>
