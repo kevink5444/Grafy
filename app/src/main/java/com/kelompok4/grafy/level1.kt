@@ -3,6 +3,7 @@ package com.kelompok4.grafy
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View.OnCreateContextMenuListener
 import android.widget.ImageView
 import androidx.cardview.widget.CardView
 
@@ -31,7 +32,7 @@ class level1 : AppCompatActivity() {
 
         val foto = findViewById<ImageView>(R.id.foto)
         foto.setOnClickListener{
-            val Intent = Intent(this,HasilActivity::class.java)
+            val Intent = Intent(this,Ocr::class.java)
             startActivity(Intent)
         }
     }
