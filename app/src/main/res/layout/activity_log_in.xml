@@ -106,6 +106,7 @@
         android:paddingLeft="80dp"
         android:paddingRight="80dp"
         android:text="Masuk"
+        android:textColor="@color/white"
         android:textStyle="bold"
         />
 
@@ -121,6 +122,7 @@
         android:background="@drawable/daftar"
         android:paddingLeft="80dp"
         android:paddingRight="80dp"
+        android:textColor="@color/white"
         android:text="Daftar"
         android:textStyle="bold"
         />

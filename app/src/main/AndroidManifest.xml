@@ -13,25 +13,25 @@
         tools:targetApi="31">
         <activity
             android:name=".CoinShop"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Shop"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".UbahProfil"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Profil"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".level1"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PilihLevelActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
