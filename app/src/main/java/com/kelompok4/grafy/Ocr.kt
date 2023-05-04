@@ -6,6 +6,7 @@ import android.graphics.Bitmap
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.github.dhaval2404.imagepicker.ImagePicker
@@ -14,15 +15,27 @@ import com.google.android.gms.vision.text.TextRecognizer
 import com.kelompok4.grafy.databinding.ActivityOcrBinding
 
 
-class Ocr(function: () -> ActivityOcrBinding) : AppCompatActivity() {
+class Ocr() : AppCompatActivity(), View.OnClickListener {
+
     var FOTO_URI: Uri? = null
     var bitmap: Bitmap? =null
     private lateinit var binding : ActivityOcrBinding
+    override fun onClick(v: View) {
+        when (v.id) {
+            R.id.button3 -> {
+                val pilihlevel = Intent(this@Ocr, HasilActivity::class.java)
+                startActivity(pilihlevel)
+            }
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
+        lateinit var buttonNext: Button
         super.onCreate(savedInstanceState)
         binding = ActivityOcrBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        buttonNext = findViewById(R.id.button3)
+        buttonNext.setOnClickListener(this)
         binding.btnPicture.setOnClickListener {
             ImagePicker.with(this)
                 .crop()
