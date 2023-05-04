@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background1"
     android:visibility="visible"
-    tools:context=".LogIn">
+    tools:context=".Login">
 
     <ImageView
         android:id="@+id/imageView"
